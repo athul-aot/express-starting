@@ -9,10 +9,10 @@ route.get('/',getAllTasks);
 route.post('/addTask',addTask)
 
 //edit a task
-route.put('/editTask:id',editTask)
+route.put('/editTask/:id',editTask)
 
 //delete a task
-route.delete('/delete:id',deleteTask)
+route.delete('/delete/:id',deleteTask)
 
 //export route module
 module.exports=route;
